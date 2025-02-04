@@ -22,7 +22,7 @@ task pileup_test {
     }
 
     runtime {
-        docker: "gcr.io/broad-cga-francois-gtex/gtex_rnaseq:V9"
+        docker: "python:3.8"
         memory: "${memory}GB"
         disks: "local-disk ${disk_space} HDD"
         cpu: "${num_threads}"
