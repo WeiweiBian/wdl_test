@@ -1,7 +1,7 @@
 task run_python_script {
-	      input {
+	      
 	        String input_string
-	      }
+	      
 	      command {
 	        python my_script.py ${input_string} > output.txt
 	      }
