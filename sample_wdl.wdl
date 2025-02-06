@@ -23,7 +23,7 @@ task pileup_test {
     }
 
     runtime {
-        docker: "python:latest"
+        docker: "python:3.9"
         memory: "${memory}GB"
         disks: "local-disk ${disk_space} HDD"
         cpu: "${num_threads}"
