@@ -11,9 +11,9 @@ task pileup_test {
     Int num_preempt
 
     command {
-    <<< PYTHON CODE
+    
     print("Hello World")  
-    >>>
+   
    
     ### Add python code
     }
