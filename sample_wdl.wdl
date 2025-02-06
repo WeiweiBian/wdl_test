@@ -12,7 +12,8 @@ task pileup_test {
 
     command {
    
-    print("Hello World")
+    echo ~{print("Hello World")} > script.py
+        python3 script.py
    
     ### Add python code
     }
