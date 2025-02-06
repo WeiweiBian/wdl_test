@@ -11,9 +11,9 @@ task pileup_test {
     Int num_preempt
 
     command {
-   
-    echo ~{print("Hello World")} > script.py
-        python3 script.py
+    <<< PYTHON CODE
+    print("Hello World")  
+    >>>
    
     ### Add python code
     }
@@ -23,7 +23,7 @@ task pileup_test {
     }
 
     runtime {
-        docker: "python:3.8"
+        docker: "python:latest"
         memory: "${memory}GB"
         disks: "local-disk ${disk_space} HDD"
         cpu: "${num_threads}"
